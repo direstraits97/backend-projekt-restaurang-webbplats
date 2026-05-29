@@ -1,1 +1,88 @@
 @use "base";
+
+body {
+  font-family: base.$font-title;
+  line-height: 1.7em;
+  margin: 0;
+  background-color: base.$background-color-primary;
+  color: base.$text-color-primary;
+}
+p {
+  font-family: base.$font-content;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 2.2rem;
+  background-color: base.$background-color-secondary;
+  border-bottom: 40px solid base.$background-color-tertiary;
+}
+a {
+  color: base.$text-color-primary;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+footer {
+  background-color: base.$background-color-secondary;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+#slogan {
+  background-color: base.$background-color-secondary;
+  border-radius: 10px;
+  border: 5px solid base.$background-color-quaternary;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 1%;
+}
+#about {
+  background-color: base.$background-color-tertiary;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid base.$background-color-secondary;
+  border-radius: 10px;
+  padding: 1%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+button {
+  border: 3px solid base.$background-color-quinary;
+  background-color: base.$background-color-quaternary;
+  color: base.$text-color-primary;
+  border-radius: 5px;
+  display: flex;
+  font-family: base.$font-content;
+  font-size: 1.2rem;
+  height: 60px;
+  width: 15%;
+  min-width: 170px;
+  max-width: 250px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#buttoncontainer {
+  display: flex;
+  flex-direction: column;
+}

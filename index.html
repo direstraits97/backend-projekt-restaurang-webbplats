@@ -2,12 +2,51 @@
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/sass/main.scss" />
     <title>Imperiet Restaurang</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header>
+      <img src="/bilder/logo.svg" alt="" />
+      <h1>Imperiet</h1>
+    </header>
     <script type="module" src="/src/js/main.js"></script>
+    <main>
+      <h2 id="slogan">Reklamaktig slogan</h2>
+      <div id="about">
+        <h3>Vad kan du förvänta dig av oss?</h3>
+        <p>Information om restaurangen</p>
+      </div>
+      <div id="buttoncontainer">
+        <button>
+          Boka bord
+          <img src="/ikoner/table.svg" alt="" />
+        </button>
+        <button>
+          Se meny
+          <img src="/ikoner/menubook.svg" alt="" />
+        </button>
+      </div>
+    </main>
+    <footer>
+      <h3>Adress:</h3>
+      <p>Ingenstansvägen 123</p>
+      <p>123 45</p>
+      <p>Sundsvall</p>
+      <h3>Kontakt:</h3>
+      <p><a href="tel:060123456">060-12 34 56</a></p>
+      <p><a href="mailto:imperiet@info.se">imperiet@info.se</a></p>
+    </footer>
   </body>
 </html>
