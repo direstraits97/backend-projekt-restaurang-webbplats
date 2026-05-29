@@ -1,15 +1,13 @@
 @use "base";
 
 body {
-  font-family: base.$font-title;
+  font-family: base.$font-content;
   line-height: 1.7em;
   margin: 0;
   background-color: base.$background-color-primary;
   color: base.$text-color-primary;
 }
-p {
-  font-family: base.$font-content;
-}
+
 #topheader {
   display: flex;
   align-items: center;
@@ -36,7 +34,7 @@ nav {
     justify-content: space-between;
     padding-top: 1%;
     padding-bottom: 1%;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 header {
@@ -135,4 +133,45 @@ textarea {
   height: 100px;
   font-family: base.$font-content;
   margin-bottom: 50px;
+}
+label {
+  font-family: base.$font-content;
+}
+#menucontainer {
+  background-color: base.$background-color-secondary;
+  border: 5px solid base.$background-color-quaternary;
+  border-radius: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+h3 {
+  text-align: center;
+}
+article {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.courseandinfo {
+  display: flex;
+  flex-direction: column;
+}
+#drinkscontainer {
+  background-color: base.$background-color-tertiary;
+  border: 5px solid base.$background-color-quaternary;
+  border-radius: 10px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.textandiconalign {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }

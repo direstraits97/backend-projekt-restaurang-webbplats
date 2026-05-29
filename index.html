@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/sass/main.scss" />
     <title>Imperiet Restaurang</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -15,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/src/sass/main.scss" />
   </head>
   <body>
     <header>
@@ -25,9 +25,24 @@
       <div id="bottomheader">
         <nav>
           <ul>
-            <li><a href="/">Startsida</a></li>
-            <li><a href="/menu">Se meny</a></li>
-            <li><a href="/booking">Boka bord</a></li>
+            <li>
+              <a class="textandiconalign" href="/">
+                Startsida
+                <img src="/ikoner/home.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a class="textandiconalign" href="/menu">
+                Se meny
+                <img src="/ikoner/menubook.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a class="textandiconalign" href="/booking">
+                Boka bord
+                <img src="/ikoner/table.svg" alt="" />
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -41,12 +56,16 @@
       </div>
       <div id="buttoncontainer">
         <button>
-          Boka bord
-          <img src="/ikoner/table.svg" alt="" />
+          <a href="/booking" class="textandiconalign">
+            Boka bord
+            <img src="/ikoner/table.svg" alt="" />
+          </a>
         </button>
         <button>
-          Se meny
-          <img src="/ikoner/menubook.svg" alt="" />
+          <a href="/menu" class="textandiconalign">
+            Se meny
+            <img src="/ikoner/menubook.svg" alt="" />
+          </a>
         </button>
       </div>
     </main>
