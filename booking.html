@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/sass/main.scss" />
+    <title>Imperiet Restaurang</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="topheader">
+        <img src="/bilder/logo.svg" alt="" />
+        <h1>Imperiet</h1>
+      </div>
+      <div id="bottomheader">
+        <nav>
+          <ul>
+            <li><a href="/">Startsida</a></li>
+            <li><a href="/menu">Se meny</a></li>
+            <li><a href="/booking">Boka bord</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <script type="module" src="/src/js/main.js"></script>
+    <main>
+      <form>
+        <h2>Bokningsformulär</h2>
+        <label for="numberofguests">Antal gäster:</label>
+        <select id="numberofguests" name="guests">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+        <label for="dateandtime">Datum och tid:</label>
+        <input type="datetime-local" id="dateandtime" name="dateandtime" />
+        <label for="name">Namn:</label>
+        <input type="text" id="name" name="name" />
+        <label for="phone">Telefonnummer:</label>
+        <input type="tel" id="phone" name="phone" />
+        <label for="information">Övrigt:</label>
+        <textarea id="information" name="information"></textarea>
+        <button>Boka</button>
+      </form>
+    </main>
+    <footer>
+      <h3>Adress:</h3>
+      <p>Ingenstansvägen 123</p>
+      <p>123 45</p>
+      <p>Sundsvall</p>
+      <h3>Kontakt:</h3>
+      <p><a href="tel:060123456">060-12 34 56</a></p>
+      <p><a href="mailto:imperiet@info.se">imperiet@info.se</a></p>
+    </footer>
+  </body>
+</html>

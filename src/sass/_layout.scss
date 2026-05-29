@@ -10,19 +10,38 @@ body {
 p {
   font-family: base.$font-content;
 }
-header {
+#topheader {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-size: 2.2rem;
+  background-color: base.$background-color-secondary;
+  padding-top: 2%;
+  padding-bottom: 2%;
   img {
     width: 200px;
     height: 200px;
   }
-  padding-top: 2%;
-  padding-bottom: 2%;
-  font-size: 2.2rem;
-  background-color: base.$background-color-secondary;
-  border-bottom: 40px solid base.$background-color-tertiary;
+}
+#bottomheader {
+  background-color: base.$background-color-tertiary;
+}
+nav {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1.8rem;
+  }
+}
+header {
+  display: flex;
+  flex-direction: column;
 }
 a {
   color: base.$text-color-primary;
@@ -39,6 +58,7 @@ footer {
 }
 h2 {
   font-size: 2.2rem;
+  text-align: center;
 }
 h3 {
   font-size: 1.8rem;
@@ -82,7 +102,37 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
+button:hover {
+  background-color: base.$background-color-quaternary-hover;
+  cursor: pointer;
+}
 #buttoncontainer {
   display: flex;
   flex-direction: column;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: base.$background-color-secondary;
+  border: 5px solid base.$background-color-quaternary;
+  border-radius: 10px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+input {
+  height: 30px;
+  font-family: base.$font-content;
+}
+select {
+  height: 30px;
+  font-family: base.$font-content;
+}
+textarea {
+  height: 100px;
+  font-family: base.$font-content;
+  margin-bottom: 50px;
 }
