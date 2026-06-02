@@ -17,7 +17,7 @@ async function getData(url, getProduct) {
     const data = await res.json();
     getProduct(data);
   } catch (error) {
-    console.log(error);
+    console.log("Fel: " + error);
   }
 }
 

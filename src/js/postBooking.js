@@ -15,6 +15,8 @@ async function makeBooking(e) {
   let name = document.querySelector("#name").value;
   let phone = document.querySelector("#phone").value;
   let info = document.querySelector("#information").value;
+  const errorHolder = document.querySelector("#errorcontainer");
+  const confirmHolder = document.querySelector("#confirmcontainer");
 
   let errors = [];
   if (numberOfGuests === "") {
@@ -31,8 +33,13 @@ async function makeBooking(e) {
   }
 
   if (errors.length > 0) {
+    errorHolder.innerHTML = "";
+    confirmHolder.innerHTML = "";
     errors.forEach((error) => {
-      console.log(error);
+      const errorEl = document.createElement("p");
+      const errorText = document.createTextNode(error);
+      errorEl.appendChild(errorText);
+      errorHolder.appendChild(errorEl);
     });
   } else {
     let booking = {
@@ -42,6 +49,12 @@ async function makeBooking(e) {
       phone: phone,
       description: info,
     };
+    confirmHolder.innerHTML = "";
+    errorHolder.innerHTML = "";
+    const confirmEl = document.createElement("p");
+    const confirmText = document.createTextNode("Din bokning är genomförd!");
+    confirmEl.appendChild(confirmText);
+    confirmHolder.appendChild(confirmEl);
 
     try {
       let response = await fetch("http://localhost:3000/api/bookings", {
