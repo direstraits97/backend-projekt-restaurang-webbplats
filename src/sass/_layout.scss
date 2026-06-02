@@ -69,7 +69,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding: 1%;
+  padding: 2%;
 }
 #about {
   background-color: base.$background-color-tertiary;
@@ -103,6 +103,9 @@ button {
 button:hover {
   background-color: base.$background-color-quaternary-hover;
   cursor: pointer;
+}
+button a:hover {
+  text-decoration: none;
 }
 #buttoncontainer {
   display: flex;
@@ -174,4 +177,12 @@ article {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+.homepictures {
+  border-radius: 10px;
+}
+picture {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }

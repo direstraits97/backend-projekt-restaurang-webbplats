@@ -88,7 +88,7 @@ function printDrinks(data) {
       printData("#beer", drink);
     }
     if (drink.category === "alcoholfree") {
-      printData("#alcoholfree");
+      printData("#alcoholfree", drink);
     }
     if (drink.category === "coffee/tea") {
       printData("#coffeeortea", drink);

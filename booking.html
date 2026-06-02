@@ -47,12 +47,12 @@
         </nav>
       </div>
     </header>
-    <script type="module" src="/src/js/main.js"></script>
     <main>
-      <form>
+      <form id="bookingform">
         <h2>Bokningsformulär</h2>
-        <label for="numberofguests">Antal gäster:</label>
+        <label for="numberofguests">Antal gäster:*</label>
         <select id="numberofguests" name="guests">
+          <option value="">Välj</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -63,16 +63,16 @@
           <option value="8">8</option>
         </select>
         <br />
-        <label for="dateandtime">Datum och tid:</label>
+        <label for="dateandtime">Datum och tid:*</label>
         <input type="datetime-local" id="dateandtime" name="dateandtime" />
         <br />
-        <label for="name">Namn:</label>
+        <label for="name">Namn:*</label>
         <input type="text" id="name" name="name" />
         <br />
-        <label for="phone">Telefonnummer:</label>
+        <label for="phone">Telefonnummer:*</label>
         <input type="tel" id="phone" name="phone" />
         <br />
-        <label for="information">Övrigt:</label>
+        <label for="information">Övrigt: (Valfri)</label>
         <textarea id="information" name="information"></textarea>
         <button>
           Boka
@@ -89,5 +89,6 @@
       <p><a href="tel:060123456">060-12 34 56</a></p>
       <p><a href="mailto:imperiet@info.se">imperiet@info.se</a></p>
     </footer>
+    <script type="module" src="/src/js/postBooking.js"></script>
   </body>
 </html>
