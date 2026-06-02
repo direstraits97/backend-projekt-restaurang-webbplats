@@ -23,8 +23,21 @@
         <h1>Imperiet</h1>
       </div>
       <div id="bottomheader">
-        <nav>
+        <button
+          id="menuopen"
+          aria-label="Öppna meny"
+          aria-expanded="false"
+          aria-controls="navbar"
+        >
+          <img src="/ikoner/openmenu.svg" alt="" />
+        </button>
+        <nav id="navbar">
           <ul>
+            <li id="mobileoption">
+              <button id="menuclose" aria-label="Stäng meny">
+                <img src="/ikoner/closemenu.svg" alt="" />
+              </button>
+            </li>
             <li>
               <a class="textandiconalign" href="/">
                 Startsida
@@ -48,7 +61,6 @@
       </div>
     </header>
     <main>
-      <div id="errorcontainer"></div>
       <div id="menucontainer">
         <section>
           <h2>Meny</h2>
@@ -97,5 +109,6 @@
       <p><a href="mailto:imperiet@info.se">imperiet@info.se</a></p>
     </footer>
     <script type="module" src="/src/js/getMenu.js"></script>
+    <script type="module" src="/src/js/hamburger.js"></script>
   </body>
 </html>

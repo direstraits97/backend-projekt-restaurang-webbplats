@@ -23,8 +23,21 @@
         <h1>Imperiet</h1>
       </div>
       <div id="bottomheader">
-        <nav>
+        <button
+          id="menuopen"
+          aria-label="Öppna meny"
+          aria-expanded="false"
+          aria-controls="navbar"
+        >
+          <img src="/ikoner/openmenu.svg" alt="" />
+        </button>
+        <nav id="navbar">
           <ul>
+            <li id="mobileoption">
+              <button id="menuclose" aria-label="Stäng meny">
+                <img src="/ikoner/closemenu.svg" alt="" />
+              </button>
+            </li>
             <li>
               <a class="textandiconalign" href="/">
                 Startsida
@@ -47,7 +60,6 @@
         </nav>
       </div>
     </header>
-    <script type="module" src="/src/js/main.js"></script>
     <main>
       <h2 id="slogan">Imperiet – Där smak regerar.</h2>
       <picture>
@@ -111,5 +123,6 @@
       <p><a href="tel:060123456">060-12 34 56</a></p>
       <p><a href="mailto:imperiet@info.se">imperiet@info.se</a></p>
     </footer>
+    <script type="module" src="/src/js/hamburger.js"></script>
   </body>
 </html>

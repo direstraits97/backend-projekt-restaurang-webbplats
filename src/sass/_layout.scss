@@ -183,8 +183,13 @@ article {
 }
 picture {
   display: flex;
-  justify-content: center;
   margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  img {
+    width: 100%;
+  }
 }
 #errorcontainer {
   background-color: rgb(92, 8, 8);
@@ -197,4 +202,114 @@ picture {
   border-radius: 5px;
   text-align: center;
   margin-bottom: 40px;
+}
+#menuclose {
+  border: none;
+  background: none;
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+#menuopen {
+  @extend #menuclose;
+  display: none;
+}
+#mobileoption {
+  display: none;
+}
+.show {
+  right: 0;
+}
+
+@media (max-width: 1024px) {
+  nav {
+    width: 80%;
+  }
+  #slogan {
+    width: 80%;
+  }
+  picture {
+    width: 80%;
+  }
+  #about {
+    width: 80%;
+  }
+  #menucontainer {
+    width: 80%;
+  }
+  #drinkscontainer {
+    width: 80%;
+  }
+  #bookingform {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  #slogan {
+    width: 90%;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  picture {
+    width: 90%;
+  }
+  #about {
+    width: 90%;
+  }
+  #topheader {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    font-size: 1.3rem;
+  }
+  #menucontainer {
+    width: 90%;
+  }
+  #drinkscontainer {
+    width: 90%;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #bookingform {
+    width: 90%;
+  }
+  #mobileoption {
+    display: block;
+  }
+  #menuopen {
+    display: block;
+    margin-right: 0;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    right: -110%;
+    transition: right 300ms ease-out;
+    width: 100%;
+    padding: 1%;
+    background-color: base.$background-color-tertiary;
+    ul {
+      height: 100vh;
+      width: 100vw;
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 0;
+      justify-content: space-around;
+      li {
+        margin-right: 4rem;
+        button {
+          min-width: min-content;
+        }
+      }
+    }
+  }
 }
