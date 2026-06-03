@@ -103,6 +103,9 @@ button a:hover {
 #buttoncontainer {
   @extend %flexandcolumn;
 }
+.buttonlink {
+  @extend button;
+}
 form {
   @extend %flexandcolumn;
   background-color: base.$background-color-secondary;

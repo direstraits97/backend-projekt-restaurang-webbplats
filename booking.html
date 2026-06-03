@@ -1,25 +1,24 @@
 <!doctype html>
 <html lang="sv">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imperiet Restaurang</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Imperial+Script&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/src/sass/main.scss" />
+      rel="stylesheet">
+    <link rel="stylesheet" href="/src/sass/main.scss">
   </head>
   <body>
     <header>
       <div id="topheader">
-        <img src="/bilder/logo.svg" alt="" />
+        <img src="/bilder/logo.svg" alt="">
         <h1>Imperiet</h1>
       </div>
       <div id="bottomheader">
@@ -29,31 +28,31 @@
           aria-expanded="false"
           aria-controls="navbar"
         >
-          <img src="/ikoner/openmenu.svg" alt="" />
+          <img src="/ikoner/openmenu.svg" alt="">
         </button>
         <nav id="navbar">
           <ul>
             <li id="mobileoption">
               <button id="menuclose" aria-label="Stäng meny">
-                <img src="/ikoner/closemenu.svg" alt="" />
+                <img src="/ikoner/closemenu.svg" alt="">
               </button>
             </li>
             <li>
               <a class="textandiconalign" href="/">
                 Startsida
-                <img src="/ikoner/home.svg" alt="" />
+                <img src="/ikoner/home.svg" alt="">
               </a>
             </li>
             <li>
               <a class="textandiconalign" href="/menu">
                 Se meny
-                <img src="/ikoner/menubook.svg" alt="" />
+                <img src="/ikoner/menubook.svg" alt="">
               </a>
             </li>
             <li>
               <a class="textandiconalign" href="/booking">
                 Boka bord
-                <img src="/ikoner/table.svg" alt="" />
+                <img src="/ikoner/table.svg" alt="">
               </a>
             </li>
           </ul>
@@ -75,23 +74,23 @@
           <option value="7">7</option>
           <option value="8">8</option>
         </select>
-        <br />
+        <br>
         <label for="dateandtime">Datum och tid:*</label>
-        <input type="datetime-local" id="dateandtime" name="dateandtime" />
-        <br />
+        <input type="datetime-local" id="dateandtime" name="dateandtime">
+        <br>
         <label for="name">Namn:*</label>
-        <input type="text" id="name" name="name" />
-        <br />
+        <input type="text" id="name" name="name">
+        <br>
         <label for="phone">Telefonnummer:*</label>
-        <input type="tel" id="phone" name="phone" />
-        <br />
+        <input type="tel" id="phone" name="phone">
+        <br>
         <label for="information">Övrigt: (Valfri)</label>
         <textarea id="information" name="information"></textarea>
         <div id="errorcontainer"></div>
         <div id="confirmcontainer"></div>
         <button>
           Boka
-          <img src="/ikoner/check.svg" alt="" />
+          <img src="/ikoner/check.svg" alt="">
         </button>
       </form>
     </main>
