@@ -61,58 +61,39 @@
       </div>
     </header>
     <main>
-      <h2 id="slogan">Imperiet – Där smak regerar.</h2>
-      <picture>
-        <source srcset="/bilder/musslor.avif" type="image/avif" />
-        <img
-          class="homepictures"
-          src="/bilder/musslor.jpg"
-          alt="Halstrade pilgrimsmusslor med blomkålspuré, brynt smör och forellrom."
-        />
-      </picture>
-      <div id="about">
-        <h3>Vilka är vi?</h3>
-        <p>
-          Välkommen till Imperiet, en exklusiv restaurang där förstklassiga
-          råvaror, utsökt hantverk och elegant atmosfär möts för att skapa en
-          minnesvärd upplevelse. Här kan gäster förvänta sig noggrant
-          komponerade rätter, personlig service och en sofistikerad miljö som
-          passar såväl affärsmiddagar som festliga tillfällen. Varje detalj är
-          utformad för att erbjuda en kväll präglad av smak, kvalitet och lyx.
-        </p>
-        <p>
-          Imperiet grundades med visionen att skapa en restaurang där klassisk
-          elegans möter modern gastronomi. Inspirerad av tidlös arkitektur,
-          internationella mattraditioner och en passion för exceptionella
-          smakupplevelser har restaurangen vuxit till en plats där kvalitet
-          alltid står i centrum. Sedan öppningen har Imperiet strävat efter att
-          förena innovation med respekt för det kulinariska hantverket, vilket
-          har gjort restaurangen till en uppskattad destination för gäster som
-          söker något utöver det vanliga.
-        </p>
-      </div>
-      <picture>
-        <source srcset="/bilder/oxfile.avif" type="image/avif" />
-        <img
-          class="homepictures"
-          src="/bilder/oxfile.jpg"
-          alt="Grillad svensk oxfilé med anklever-terrine, tryffelsås och potatisgratäng."
-        />
-      </picture>
-      <div id="buttoncontainer">
+      <form id="bookingform">
+        <h2>Bokningsformulär</h2>
+        <label for="numberofguests">Antal gäster:*</label>
+        <select id="numberofguests" name="guests">
+          <option value="">Välj</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+        <br />
+        <label for="dateandtime">Datum och tid:*</label>
+        <input type="datetime-local" id="dateandtime" name="dateandtime" />
+        <br />
+        <label for="name">Namn:*</label>
+        <input type="text" id="name" name="name" />
+        <br />
+        <label for="phone">Telefonnummer:*</label>
+        <input type="tel" id="phone" name="phone" />
+        <br />
+        <label for="information">Övrigt: (Valfri)</label>
+        <textarea id="information" name="information"></textarea>
+        <div id="errorcontainer"></div>
+        <div id="confirmcontainer"></div>
         <button>
-          <a href="/booking" class="textandiconalign">
-            Boka bord
-            <img src="/ikoner/table.svg" alt="" />
-          </a>
+          Boka
+          <img src="/ikoner/check.svg" alt="" />
         </button>
-        <button>
-          <a href="/menu" class="textandiconalign">
-            Se meny
-            <img src="/ikoner/menubook.svg" alt="" />
-          </a>
-        </button>
-      </div>
+      </form>
     </main>
     <footer>
       <h3>Adress:</h3>
@@ -123,6 +104,7 @@
       <p><a href="tel:060123456">060-12 34 56</a></p>
       <p><a href="mailto:imperiet@info.se">imperiet@info.se</a></p>
     </footer>
+    <script type="module" src="/src/js/postBooking.js"></script>
     <script type="module" src="/src/js/hamburger.js"></script>
   </body>
 </html>

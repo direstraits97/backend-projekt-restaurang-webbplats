@@ -1,1 +1,296 @@
 @use "base";
+
+body {
+  font-family: base.$font-content;
+  line-height: 1.7em;
+  margin: 0;
+  background-color: base.$background-color-primary;
+  color: base.$text-color-primary;
+}
+
+#topheader {
+  @extend %flexandalign;
+  justify-content: space-around;
+  font-size: 2.2rem;
+  background-color: base.$background-color-secondary;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+#bottomheader {
+  background-color: base.$background-color-tertiary;
+}
+nav {
+  width: 50%;
+  @extend %centerchild;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1.5rem;
+  }
+}
+header {
+  @extend %flexandcolumn;
+}
+a {
+  color: base.$text-color-primary;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+footer {
+  background-color: base.$background-color-secondary;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+h2 {
+  font-size: 2.2rem;
+  text-align: center;
+}
+h3 {
+  font-size: 1.8rem;
+}
+#slogan {
+  background-color: base.$background-color-secondary;
+  border-radius: 10px;
+  border: 5px solid base.$background-color-quaternary;
+  width: 50%;
+  @extend %centerchild;
+  text-align: center;
+  padding: 2%;
+}
+#about {
+  background-color: base.$background-color-tertiary;
+  width: 50%;
+  @extend %centerchild;
+  border: 5px solid base.$background-color-secondary;
+  border-radius: 10px;
+  padding: 1%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+button {
+  border: 3px solid base.$background-color-quinary;
+  background-color: base.$background-color-quaternary;
+  color: base.$text-color-primary;
+  border-radius: 5px;
+  @extend %flexandalign;
+  font-family: base.$font-content;
+  font-size: 1.2rem;
+  height: 60px;
+  width: 15%;
+  min-width: 170px;
+  max-width: 250px;
+  justify-content: center;
+  margin-bottom: 40px;
+  @extend %centerchild;
+}
+button:hover {
+  background-color: base.$background-color-quaternary-hover;
+  cursor: pointer;
+}
+button a:hover {
+  text-decoration: none;
+}
+#buttoncontainer {
+  @extend %flexandcolumn;
+}
+form {
+  @extend %flexandcolumn;
+  background-color: base.$background-color-secondary;
+  border: 5px solid base.$background-color-quaternary;
+  border-radius: 10px;
+  width: 40%;
+  @extend %centerchild;
+  padding: 1%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+input {
+  height: 30px;
+  font-family: base.$font-content;
+}
+select {
+  @extend input;
+}
+textarea {
+  height: 100px;
+  font-family: base.$font-content;
+  margin-bottom: 50px;
+}
+
+#menucontainer {
+  background-color: base.$background-color-secondary;
+  border: 5px solid base.$background-color-quaternary;
+  border-radius: 10px;
+  width: 50%;
+  @extend %centerchild;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+h3 {
+  text-align: center;
+}
+article {
+  width: 80%;
+  @extend %centerchild;
+  display: flex;
+  justify-content: space-between;
+}
+.courseandinfo {
+  @extend %flexandcolumn;
+}
+#drinkscontainer {
+  background-color: base.$background-color-tertiary;
+  border: 5px solid base.$background-color-quaternary;
+  border-radius: 10px;
+  width: 50%;
+  @extend %centerchild;
+  margin-bottom: 50px;
+}
+.textandiconalign {
+  @extend %flexandalign;
+  gap: 5px;
+}
+.homepictures {
+  border-radius: 10px;
+}
+picture {
+  display: flex;
+  margin-bottom: 50px;
+  max-width: 800px;
+  @extend %centerchild;
+  img {
+    width: 100%;
+  }
+}
+#errorcontainer {
+  background-color: rgb(92, 8, 8);
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#confirmcontainer {
+  background-color: rgb(14, 78, 14);
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#menuclose {
+  border: none;
+  background: none;
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+#menuopen {
+  @extend #menuclose;
+  display: none;
+}
+#mobileoption {
+  display: none;
+}
+.show {
+  right: 0;
+}
+
+@media (max-width: 1024px) {
+  nav {
+    width: 80%;
+  }
+  #slogan {
+    width: 80%;
+  }
+  picture {
+    width: 80%;
+  }
+  #about {
+    width: 80%;
+  }
+  #menucontainer {
+    width: 80%;
+  }
+  #drinkscontainer {
+    width: 80%;
+  }
+  #bookingform {
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  #slogan {
+    width: 90%;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  picture {
+    width: 90%;
+  }
+  #about {
+    width: 90%;
+  }
+  #topheader {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    font-size: 1.3rem;
+  }
+  #menucontainer {
+    width: 90%;
+  }
+  #drinkscontainer {
+    width: 90%;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #bookingform {
+    width: 90%;
+  }
+  #mobileoption {
+    display: block;
+  }
+  #menuopen {
+    display: block;
+    margin-right: 0;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    right: -110%;
+    transition: right 300ms ease-out;
+    width: 100%;
+    padding: 1%;
+    background-color: base.$background-color-tertiary;
+    ul {
+      height: 100vh;
+      width: 100vw;
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 0;
+      justify-content: space-around;
+      li {
+        margin-right: 4rem;
+        button {
+          min-width: min-content;
+        }
+      }
+    }
+  }
+}

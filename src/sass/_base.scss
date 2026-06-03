@@ -1,0 +1,27 @@
+//Fonts
+$font-content: "Google Sans Flex", sans-serif;
+
+//Färger
+$background-color-primary: #080909;
+$background-color-secondary: #001514;
+$background-color-tertiary: #200404;
+$background-color-quaternary: #5d4306;
+$background-color-quinary: #ffffff;
+
+$background-color-quaternary-hover: #7c5a0b;
+
+$text-color-primary: #ffffff;
+
+//Placeholders
+%centerchild {
+  margin-left: auto;
+  margin-right: auto;
+}
+%flexandalign {
+  display: flex;
+  align-items: center;
+}
+%flexandcolumn {
+  display: flex;
+  flex-direction: column;
+}

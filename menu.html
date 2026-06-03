@@ -61,57 +61,42 @@
       </div>
     </header>
     <main>
-      <h2 id="slogan">Imperiet – Där smak regerar.</h2>
-      <picture>
-        <source srcset="/bilder/musslor.avif" type="image/avif" />
-        <img
-          class="homepictures"
-          src="/bilder/musslor.jpg"
-          alt="Halstrade pilgrimsmusslor med blomkålspuré, brynt smör och forellrom."
-        />
-      </picture>
-      <div id="about">
-        <h3>Vilka är vi?</h3>
-        <p>
-          Välkommen till Imperiet, en exklusiv restaurang där förstklassiga
-          råvaror, utsökt hantverk och elegant atmosfär möts för att skapa en
-          minnesvärd upplevelse. Här kan gäster förvänta sig noggrant
-          komponerade rätter, personlig service och en sofistikerad miljö som
-          passar såväl affärsmiddagar som festliga tillfällen. Varje detalj är
-          utformad för att erbjuda en kväll präglad av smak, kvalitet och lyx.
-        </p>
-        <p>
-          Imperiet grundades med visionen att skapa en restaurang där klassisk
-          elegans möter modern gastronomi. Inspirerad av tidlös arkitektur,
-          internationella mattraditioner och en passion för exceptionella
-          smakupplevelser har restaurangen vuxit till en plats där kvalitet
-          alltid står i centrum. Sedan öppningen har Imperiet strävat efter att
-          förena innovation med respekt för det kulinariska hantverket, vilket
-          har gjort restaurangen till en uppskattad destination för gäster som
-          söker något utöver det vanliga.
-        </p>
+      <div id="menucontainer">
+        <section>
+          <h2>Meny</h2>
+          <section id="appetizers">
+            <h3>Förrätter</h3>
+          </section>
+          <section id="maincourses">
+            <h3>Huvudrätter</h3>
+          </section>
+          <section id="desserts">
+            <h3>Desserter</h3>
+          </section>
+        </section>
       </div>
-      <picture>
-        <source srcset="/bilder/oxfile.avif" type="image/avif" />
-        <img
-          class="homepictures"
-          src="/bilder/oxfile.jpg"
-          alt="Grillad svensk oxfilé med anklever-terrine, tryffelsås och potatisgratäng."
-        />
-      </picture>
-      <div id="buttoncontainer">
-        <button>
-          <a href="/booking" class="textandiconalign">
-            Boka bord
-            <img src="/ikoner/table.svg" alt="" />
-          </a>
-        </button>
-        <button>
-          <a href="/menu" class="textandiconalign">
-            Se meny
-            <img src="/ikoner/menubook.svg" alt="" />
-          </a>
-        </button>
+      <div id="drinkscontainer">
+        <section>
+          <h2>Dryckeslista</h2>
+          <section id="redwine">
+            <h3>Röda viner</h3>
+          </section>
+          <section id="whitewine">
+            <h3>Vita viner</h3>
+          </section>
+          <section id="sparklingwine">
+            <h3>Mousserande</h3>
+          </section>
+          <section id="beer">
+            <h3>Öl</h3>
+          </section>
+          <section id="alcoholfree">
+            <h3>Alkoholfritt</h3>
+          </section>
+          <section id="coffeeortea">
+            <h3>Kaffe/Te</h3>
+          </section>
+        </section>
       </div>
     </main>
     <footer>
@@ -123,6 +108,7 @@
       <p><a href="tel:060123456">060-12 34 56</a></p>
       <p><a href="mailto:imperiet@info.se">imperiet@info.se</a></p>
     </footer>
+    <script type="module" src="/src/js/getMenu.js"></script>
     <script type="module" src="/src/js/hamburger.js"></script>
   </body>
 </html>
