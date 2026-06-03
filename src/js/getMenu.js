@@ -1,3 +1,8 @@
+/**
+ * Denna fil hämtar meny-innehållet från varje tabell och skriver ut innehållet i DOM.
+ * Av: Josefine Backlund
+ */
+
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -6,11 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
   getDesserts();
   getDrinks();
 });
+//URL:er
 const appetizerUrl = "http://localhost:3000/api/appetizers";
 const mainCourseUrl = "http://localhost:3000/api/maincourses";
 const dessertsUrl = "http://localhost:3000/api/desserts";
 const drinksUrl = "http://localhost:3000/api/drinks";
 
+//Grundläggande funktion för get-anrop för mindre redundans.
 async function getData(url, getProduct) {
   try {
     const res = await fetch(url);
@@ -21,6 +28,7 @@ async function getData(url, getProduct) {
   }
 }
 
+//Denna generella funktion skapar nödvändiga element och textnodes från anropet och skriver ut i DOM på rätt plats i menyn med hjälp av id.
 function printData(id, data) {
   const container = document.querySelector(id);
   const articleEl = document.createElement("article");

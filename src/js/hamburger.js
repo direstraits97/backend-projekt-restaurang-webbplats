@@ -1,3 +1,8 @@
+/**
+ * Denna fil justerar hamburgermenyn.
+ * Av: Josefine Backlund
+ */
+
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
