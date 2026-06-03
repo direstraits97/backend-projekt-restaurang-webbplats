@@ -38,11 +38,12 @@ function printData(id, data) {
   const courseText = document.createTextNode(data.name);
   const descriptionText = document.createTextNode(data.description);
   const priceText = document.createTextNode(data.price);
+  const currency = document.createTextNode(" kr");
 
   label.appendChild(courseText);
   description.appendChild(descriptionText);
   price.appendChild(priceText);
-
+  price.appendChild(currency);
   const holder = document.createElement("div");
   holder.classList.add("courseandinfo");
   holder.appendChild(label);

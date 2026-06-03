@@ -147,6 +147,7 @@ article {
 }
 .courseandinfo {
   @extend %flexandcolumn;
+  width: 80%;
 }
 #drinkscontainer {
   background-color: base.$background-color-tertiary;
@@ -227,6 +228,9 @@ picture {
   }
 }
 @media (max-width: 600px) {
+  .courseandinfo {
+    width: 100%;
+  }
   #slogan {
     width: 90%;
   }
