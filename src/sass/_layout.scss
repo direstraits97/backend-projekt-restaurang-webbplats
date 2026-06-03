@@ -9,8 +9,7 @@ body {
 }
 
 #topheader {
-  display: flex;
-  align-items: center;
+  @extend %flexandalign;
   justify-content: space-around;
   font-size: 2.2rem;
   background-color: base.$background-color-secondary;
@@ -26,8 +25,7 @@ body {
 }
 nav {
   width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %centerchild;
   ul {
     list-style-type: none;
     display: flex;
@@ -38,8 +36,7 @@ nav {
   }
 }
 header {
-  display: flex;
-  flex-direction: column;
+  @extend %flexandcolumn;
 }
 a {
   color: base.$text-color-primary;
@@ -66,16 +63,14 @@ h3 {
   border-radius: 10px;
   border: 5px solid base.$background-color-quaternary;
   width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %centerchild;
   text-align: center;
   padding: 2%;
 }
 #about {
   background-color: base.$background-color-tertiary;
   width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %centerchild;
   border: 5px solid base.$background-color-secondary;
   border-radius: 10px;
   padding: 1%;
@@ -87,7 +82,7 @@ button {
   background-color: base.$background-color-quaternary;
   color: base.$text-color-primary;
   border-radius: 5px;
-  display: flex;
+  @extend %flexandalign;
   font-family: base.$font-content;
   font-size: 1.2rem;
   height: 60px;
@@ -95,10 +90,8 @@ button {
   min-width: 170px;
   max-width: 250px;
   justify-content: center;
-  align-items: center;
   margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %centerchild;
 }
 button:hover {
   background-color: base.$background-color-quaternary-hover;
@@ -108,18 +101,15 @@ button a:hover {
   text-decoration: none;
 }
 #buttoncontainer {
-  display: flex;
-  flex-direction: column;
+  @extend %flexandcolumn;
 }
 form {
-  display: flex;
-  flex-direction: column;
+  @extend %flexandcolumn;
   background-color: base.$background-color-secondary;
   border: 5px solid base.$background-color-quaternary;
   border-radius: 10px;
   width: 40%;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %centerchild;
   padding: 1%;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -129,24 +119,20 @@ input {
   font-family: base.$font-content;
 }
 select {
-  height: 30px;
-  font-family: base.$font-content;
+  @extend input;
 }
 textarea {
   height: 100px;
   font-family: base.$font-content;
   margin-bottom: 50px;
 }
-label {
-  font-family: base.$font-content;
-}
+
 #menucontainer {
   background-color: base.$background-color-secondary;
   border: 5px solid base.$background-color-quaternary;
   border-radius: 10px;
   width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %centerchild;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -155,27 +141,23 @@ h3 {
 }
 article {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %centerchild;
   display: flex;
   justify-content: space-between;
 }
 .courseandinfo {
-  display: flex;
-  flex-direction: column;
+  @extend %flexandcolumn;
 }
 #drinkscontainer {
   background-color: base.$background-color-tertiary;
   border: 5px solid base.$background-color-quaternary;
   border-radius: 10px;
   width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %centerchild;
   margin-bottom: 50px;
 }
 .textandiconalign {
-  display: flex;
-  align-items: center;
+  @extend %flexandalign;
   gap: 5px;
 }
 .homepictures {
@@ -185,8 +167,7 @@ picture {
   display: flex;
   margin-bottom: 50px;
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  @extend %centerchild;
   img {
     width: 100%;
   }
