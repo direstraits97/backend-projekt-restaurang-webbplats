@@ -33,8 +33,10 @@ function printData(id, data) {
   const container = document.querySelector(id);
   const articleEl = document.createElement("article");
   const label = document.createElement("h4");
+  label.classList.add("objecttitle");
   const description = document.createElement("p");
   const price = document.createElement("p");
+  price.classList.add("objecttitle");
   const courseText = document.createTextNode(data.name);
   const descriptionText = document.createTextNode(data.description);
   const priceText = document.createTextNode(data.price);

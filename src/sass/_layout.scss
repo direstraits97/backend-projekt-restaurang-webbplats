@@ -6,6 +6,7 @@ body {
   margin: 0;
   background-color: base.$background-color-primary;
   color: base.$text-color-primary;
+  font-size: 1.2em;
 }
 
 #topheader {
@@ -69,7 +70,7 @@ h3 {
 }
 #about {
   background-color: base.$background-color-tertiary;
-  width: 50%;
+  width: 40%;
   @extend %centerchild;
   border: 5px solid base.$background-color-secondary;
   border-radius: 10px;
@@ -205,6 +206,9 @@ picture {
 }
 .show {
   right: 0;
+}
+.objecttitle {
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1024px) {
